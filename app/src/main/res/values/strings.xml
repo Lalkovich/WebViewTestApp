@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WebViewTestApp</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">disagree</string>
+    <string name="agreement_full">By pressing agree button you confirm the agreement and privacy policy</string>
+    <string name="privacy_policy">privacy policy</string>
+    <string name="agreement">agreement</string>
+    <string name="facebook_app_id">1114153252514947</string>
+    <string name="try_again">Try Again</string>
+</resources>

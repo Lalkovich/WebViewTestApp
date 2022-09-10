@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.webviewtestapp.ui.start_fragment.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment"/>
+        <action
+            android:id="@+id/action_startFragment_to_noInternetFragment"
+            app:destination="@id/noInternetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noInternetFragment"
+        android:name="com.example.webviewtestapp.ui.no_internet_fragment.NoInternetFragment"
+        android:label="NoInternetFragment"
+        tools:layout="@layout/fragment_no_internet">
+        <action
+            android:id="@+id/action_noInternetFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.webviewtestapp.ui.webview_fragment.WebViewFragment"
+        android:label="WebViewFragment"
+        tools:layout="@layout/fragment_webview">
+        <action
+            android:id="@+id/action_webViewFragment_to_noInternetFragment"
+            app:destination="@id/noInternetFragment" />
+    </fragment>
+</navigation>
